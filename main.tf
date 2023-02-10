@@ -85,7 +85,7 @@ resource "aws_subnet" "private_app_subnet_az1" {
 
 # create private app subnet az2
 resource "aws_subnet" "private_app_subnet_az2" {
-  vpc_id                   = 
+  vpc_id                   = aws_vpc.vpc.vpc_id 
   cidr_block               = 
   availability_zone        = 
   map_public_ip_on_launch  = 
